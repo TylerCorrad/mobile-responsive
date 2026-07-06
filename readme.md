@@ -15,7 +15,9 @@ descargue este proyecto y muevalo a la carpeta */include/plugins* dentro de su i
 ### Paso 2
 Modifique el archivo **header.inc.php** en las carpetas */include/client/* e */include/staff/* y agregue la siguiente linea dentro de la etiqueta *head*.
 <!--CSS plugin-->
+``
     <link rel="stylesheet" href="<?php echo ROOT_PATH; ?>include/plugins/mobile-responsive/assets/css/responsive.css" media="screen"/>
+``
 <!--CSS plugin-->
 ### Paso 3
 En el panel de administrador de osTicket vaya al apartado **Administrar>Plugins** y haga click sobre *"Añadir nuevo Plugin"*.

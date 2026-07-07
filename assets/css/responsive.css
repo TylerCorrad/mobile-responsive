@@ -1,5 +1,47 @@
+@media screen and (max-width: 1024px) {
+
+    #container {
+        box-sizing: border-box;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0;
+        margin-left: 5px;
+        margin-right: 15px;
+    }
+
+    table {
+        width: 100% !important;
+        margin-right: 5px;
+        margin: 0;}
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        min-height: fit-content;
+        visibility: visible;
+    }
+
+    svg,form{
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    #customQ_nav , #nav{
+    max-width: 100%;
+    min-height: fit-content;
+    }
+    #overlay, .dialog.size-large, .dialog#popup{
+        max-width: 100% !important;
+    }
+}
 
 @media screen and (max-width: 768px) {
+    body, html{
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+
+    }
     input,
     select,
     textarea{
@@ -8,9 +50,10 @@
         max-width: 200px;
         padding: 4px;
         padding-right: 16px;
-        margin-bottom: 4px;
+        margin-bottom: 2px;
         border-radius: 4px;
-        border: solid 2px #9b9b9b !important;}
+        border: solid 2px #9b9b9b !important;
+        height: fit-content;}
     button {
         width: 80% !important;
         box-sizing: border-box;
@@ -18,23 +61,31 @@
         width: fit-content;
         padding: 10px;
         margin-bottom: 4px;
-        border-radius: 4px;
-        border: solid 4px #9b9b9b;}
-    body {
-        overflow-x: hidden;
-        align-items: center;
-        justify-content: center;}
+        border-radius: 4px;}
+
     img {
         max-width: 100%;
         height: auto;}
     table {
         width: 100% !important;
-        padding: 0;
+        margin-right: 5px;
         margin: 0;}
 
     table tr td[width="50%"] {
         width: 100% !important;
-        display: block !important;}
+        display: block !important;
+    }
+    form{
+        padding: 10px 5px;
+        width: 100%;
+        margin: 5px;
+    }
+    p{
+        padding-right: 5px;
+    }
+    tr, td{
+        min-height: fit-content;
+    }
 
     .main-content {
         order: 1;
@@ -63,6 +114,76 @@
         margin-top: 15px;
         float: none !important;}
 
+  
+    .form_table tbody,
+    .form_table tr,
+    .form_table td,
+    .form_table th {
+        display: block !important;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .form_table tr {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+
+    .form_table td {
+        min-width: unset !important;
+    }
+
+    .form_table input,
+    .form_table select,
+    .form_table textarea {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .clean.tabs{
+        height: fit-content
+    }
+    .attached.input{
+        display: flex;
+        align-content: baseline;
+        width: fit-content;
+    }
+    .attached.button{
+        width: min-content !important;
+    }
+    
+    .customQ-dropdown{
+        display: none !important;
+    }
+    table.queue.tickets {
+        width: 100% !important;
+        table-layout: auto !important;
+    }
+
+    table.queue.tickets th,
+    table.queue.tickets td {
+        width: auto !important;
+    }
+    
+    table.list {
+        display: block !important;
+        width: 100% !important;
+        overflow-x: scroll !important;
+        overflow-y: hidden !important;
+        white-space: nowrap;
+        box-sizing: border-box;
+        margin-right: 15px;
+        max-width: fit-content;
+    }
+
+    table.list tbody,
+    table.list thead,
+    table.list tfoot {
+        width: 100%;
+    }
+
     #topic-id{
         width: 80% !important;
         max-width: fit-content;
@@ -78,35 +199,38 @@
         display: flex;
         flex-direction: column;}
     #header{
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+        display: flex;
         align-items: center;
         justify-content: center;
-        margin: 0;
-        padding: 0;}
+        gap: 5px;
+        flex-wrap: wrap; 
+    }
     #header p{
         display: flex;
         align-items: center;
         text-align: center;
         margin: 0 10px;
     }
-    #container {
-        width: 100% !important;
-        padding: 0;
-    }
     #content {
-        width: 90% !important;
-        padding: 10px 10px;
-        margin: 10px 10px !important;
+        box-sizing: border-box;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden;
+        padding: 8px 0;
+        margin: 0 !important;
         align-items: center;
         justify-content: center;
         align-self: end;
-
     }
     #ticketForm {
         width: 100% !important;
         padding: 0;
         margin: 0;
     }
-    #nav {
+    /*#nav {
         display: flex !important;
         flex-wrap: wrap;
         justify-content: center;
@@ -117,13 +241,19 @@
         margin: 0;
         margin-bottom: 10px;
         height: fit-content !important; 
-        /* Modern syntax */
         background-image: linear-gradient(to bottom, #d4d4d4, #d4d4d4, #b4b4b4) !important;
-    }
-    #nav li {
+    }*/
+    /*#nav li {
         float: none !important;
         display: block;
+    }*/
+
+    #sub_nav, #nav {
+        display: block !important;
+        overflow-x: scroll;
+        height: fit-content;
     }
+
     #msg_error {
         height: fit-content !important;
         margin-bottom: 10px;
@@ -141,12 +271,39 @@
         float: none !important;
         width: 100% !important;
     }
+    #logo img{
+        height: fit-content;
+    }
     .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current, 
     .ui-datepicker .ui-datepicker-buttonpane button {
         float:left !important;
     }
+
+    #pjax-container{
+        max-width: 100%;
+    }
+    #popup.dialog.size-normal{
+        width: 90% !important;
+        margin: 5px;
+
+    }
+    #line-chart-legend{
+        display: flex;
+        flex-direction: column;
+        max-width: fit-content;
+        justify-content: end;
+        padding: 15px;
+        gap: 2px;
+    }
+    #line-chart-legend > br{
+        display: none;
+    }
 }
-@media (max-width: 500px) {    
+@media (max-width: 500px) { 
+    
+    .jb-overflow-menu-helper-position{
+        height: 100%;
+    }
 
     .pull-right.flush-right {
         display: flex !important;
@@ -163,6 +320,11 @@
     .pull-right.flush-right p {
         float: none !important; 
     }  
+    .tab_content{
+        width: 100%;
+        padding: 0 10px;
+        overflow-x: scroll;
+    }
     #ticketInfo > tbody > tr:nth-child(2) {
         display: block !important;
     }
@@ -197,6 +359,9 @@
         align-items: center;
     }
     #ticketForm td{
+        width: 100% !important;
+    }
+    #tickets{
         width: 100% !important;
     }
 

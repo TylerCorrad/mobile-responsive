@@ -1,0 +1,486 @@
+/* Responsive styles — reorganized and optimized */
+
+/* <= 1024px */
+@media screen and (max-width: 1024px) {
+    #container,
+    #pjax-container {
+        box-sizing: border-box;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0;
+    }
+
+    table {
+        width: 100% !important;
+        margin-right: 20px !important;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: fit-content;
+        visibility: visible;
+    }
+
+    svg,
+    form {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    #customQ_nav,
+    #nav,
+    #overlay,
+    #basic_search{
+        max-width: 100% !important;
+        min-height: fit-content;
+    }
+
+    .dialog{
+        top: 0 !important;
+        left: 0 !important;
+        margin: 20px !important;
+        width: 90cqw;
+        height: 90cqh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        overflow-wrap: break-word;
+    }
+    #overlay{
+        margin: 0 !important;
+    }
+}
+
+/* <= 768px (tablet and small laptops) */
+@media screen and (max-width: 768px) {
+    html,
+    body {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    input,
+    select,
+    textarea {
+        box-sizing: border-box;
+        max-height: 32px;
+        max-width: 200px;
+        padding: 4px 16px 4px 4px;
+        margin-bottom: 2px;
+        border-radius: 4px;
+        height: fit-content;
+    }
+
+    button {
+        box-sizing: border-box;
+        max-height: 32px;
+        padding: 10px;
+        margin-bottom: 4px;
+        border-radius: 4px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    table tr td[width="50%"] {
+        width: 100% !important;
+        display: block !important;
+    }
+
+    form {
+        padding: 10px 5px;
+        width: 100%;
+        margin: 5px;
+    }
+
+    h1{
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    p,
+    h2,
+    div {
+        margin-left: 5px;
+        padding-right: 5px;
+        min-height: fit-content !important;
+        margin-bottom: 5px !important;
+    }
+
+
+    tr,
+    td {
+        min-height: fit-content;
+    }
+
+
+    /* Layout ordering */
+    .main-content {
+        order: 1;
+        width: 100%;
+    }
+
+    .sidebar.pull-right {
+        order: 2;
+        width: 100%;
+        margin-top: 15px;
+        float: none !important;
+    }
+
+    .ui-datepicker-trigger {
+        align-self: start;
+        align-items: start;
+        max-width: 32px;
+        border: none;
+    }
+
+    .redactor-box {
+        width: 100% !important;
+        margin: 0 4px;
+    }
+
+    .search.well {
+        margin: 10px 10px 16px;
+        height: fit-content !important;
+    }
+
+    .flag {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .sticky.bar .pull-left,
+    .sticky.bar .pull-right {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align:left;
+    }
+
+    .sticky.bar .pull-right {
+        margin-top: 10px;
+    }
+
+    /* Forms as blocks */
+    .form_table tbody,
+    .form_table tr,
+    .form_table td,
+    .form_table th {
+        display: block !important;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .form_table tr {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+
+    .form_table td {
+        min-width: unset !important;
+    }
+
+    .form_table input,
+    .form_table select,
+    .form_table textarea {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .clean.tabs {
+        height: fit-content;
+    }
+
+    .attached.input {
+        display: flex;
+        align-content: baseline;
+        width: fit-content;
+    }
+
+    input.basic-search{
+        margin-bottom: 0;
+        height: 100cqh;
+    }
+
+    .attached.button {
+        width: min-content !important;
+        height: 100cqh;
+    }
+
+    .customQ-dropdown {
+        display: none !important;
+    }
+    span.action-button {
+    flex-direction: row-reverse;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+}
+    .action-button > span{
+        display: flex;
+        width: fit-content;
+    }
+
+    .icon-caret-down, .icon-cog{
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .icon-sort-by-attributes-alt{
+        padding-top: 5px;
+    }
+
+    .has_bottom_border{
+        min-height: fit-content;
+    }
+    table.queue.tickets {
+        width: 100% !important;
+        table-layout: auto !important;
+    }
+
+    table.queue.tickets th,
+    table.queue.tickets td {
+        width: auto !important;
+    }
+
+    table.list {
+        display: block !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        white-space: nowrap;
+        box-sizing: border-box;
+        max-width: fit-content;
+    }
+
+    table.list tbody,
+    table.list thead,
+    table.list tfoot {
+        width: 100%;
+    }
+
+    #topic-id {
+        width: 80% !important;
+        max-width: fit-content;
+        margin-top: 10px;
+    }
+
+    #help-topic-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #help-topic-parent,
+    #help-topic-child,
+    #ticketInfo,
+    #ticketForm,
+    #tickets {
+        width: 100% !important;
+    }
+
+    #landing_page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #header {
+        height: fit-content;
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    #content {
+        box-sizing: border-box;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden;
+        padding: 0 12px 8px 0;
+        margin: 0 !important;
+        align-items: center;
+        justify-content: center;
+        align-self: end;
+    }
+
+    #sub_nav,
+    #nav {
+        display: block !important;
+        overflow-x: auto;
+        overflow-y: hidden;
+        height: fit-content;
+        border-top: 1px solid #aaa;
+        margin: 0 !important;
+    }
+
+    #msg_error {
+        height: fit-content !important;
+        margin-bottom: 10px;
+    }
+
+    #logo .valign-helper {
+        display: none;
+    }
+
+    #ui-datepicker-div.ui-datepicker-multi {
+        width: 95vw !important;
+    }
+
+    #ui-datepicker-div .ui-datepicker-group {
+        float: none !important;
+        width: 100% !important;
+    }
+
+    #logo img {
+        height: fit-content;
+    }
+
+    .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current,
+    .ui-datepicker .ui-datepicker-buttonpane button {
+        float: left !important;
+    }
+
+    #popup.dialog.size-normal {
+        width: 90% !important;
+        margin: 5px;
+    }
+
+    #line-chart-legend {
+        display: flex;
+        flex-direction: column;
+        max-width: fit-content;
+        justify-content: end;
+        padding: 15px;
+        gap: 2px;
+    }
+
+    #line-chart-legend > br {
+        display: none;
+    }
+
+    div#action-dropdown-more,
+    .tip_box,
+    .tip_content,
+    .tip_content > div {
+        left: auto !important;
+        margin-left: 8%;
+        margin-right: 8%;
+        max-width: 70cqw;
+        min-width: 200px !important;
+    }
+
+    .tip_content > div {
+        text-wrap-style: balance;
+        overflow-wrap: break-word;
+        margin-right: 10px;
+    }
+
+    .sticky.bar.opaque {
+        display: flex;
+        flex-direction: row;
+    }
+
+    form[action="logs.php"] > div {
+        height: fit-content;
+    }
+}
+
+/* <= 500px (phones) */
+@media (max-width: 500px) {
+    .jb-overflow-menu-helper-position {
+        height: 100%;
+    }
+
+    .pull-right {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: fit-content;
+        margin: 0 10px 5px 0;
+        padding: 10px;
+        font-size: 12px;
+        float: none !important;
+    }
+
+    .pull-right.flush-right p {
+        float: none !important;
+    }
+
+
+
+    .tab_content {
+        width: 100%;
+        padding: 0 10px;
+        overflow-x: auto;
+    }
+
+    #ticketInfo > tbody > tr:nth-child(2) {
+        display: block !important;
+    }
+
+    #ticketInfo > tbody > tr:nth-child(2) > td[width="50%"] {
+        display: block !important;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    #ticketTable {
+        display: block;
+        width: 100% !important;
+        white-space: nowrap;
+    }
+
+    #content > table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    #content > table::-webkit-scrollbar {
+        display: none;
+    }
+
+    #clientLogin input,
+    #clientLogin div {
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+    #clientLogin div {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #ticketForm td,
+    #tickets {
+        width: 100% !important;
+    }
+}
+
+/* <= 352px (very small phones) */
+@media (max-width: 352px) {
+    #ticketForm > table > tbody:first-child tr {
+        display: flex !important;
+        flex-direction: column;
+        width: 100% !important;
+    }
+
+    #ticketForm > table > tbody:first-child td {
+        width: 100% !important;
+        flex: 0 0 100%;
+        box-sizing: border-box;
+    }
+}

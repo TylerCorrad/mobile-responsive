@@ -113,6 +113,9 @@
     .pull-right{
         margin-top: 15px;
         float: none !important;}
+    .pull-right.flush-right p {
+        float: none !important;
+    }
 
     #topic-id{
         width: 80% !important;

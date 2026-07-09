@@ -2,7 +2,6 @@
 
 /* <= 1024px */
 @media screen and (max-width: 1024px) {
-
     #container,
     #pjax-container {
         box-sizing: border-box;
@@ -36,17 +35,16 @@
         width: 100%;
     }
 
-    #pjax-container td{
+    #pjax-container td {
         max-width: max-content !important;
     }
 
-        
     .select2-container {
         width: 100% !important;
         max-width: 100%;
     }
 
-    .dialog input [type="submit"] {
+    .dialog input[type="submit"] {
         margin-top: 20px;
     }
 
@@ -87,7 +85,6 @@
 
 /* <= 768px (tablet and small laptops) */
 @media screen and (max-width: 768px) {
-
     .sticky.bar .pull-left,
     .sticky.bar .pull-right {
         float: none;
@@ -100,35 +97,42 @@
         margin: 0;
     }
 
-    .settings_table{
-        width:100% !important;
-        max-width:100% !important;
-        table-layout:fixed;
+    .settings_table {
+        width: 100% !important;
+        max-width: 100% !important;
+        table-layout: auto;
+    }
+
+    .settings_table td:first-child {
+        width: 180px !important;
+        white-space: nowrap;
+    }
+
+    .settings_table td:last-child {
+        width: auto !important;
     }
 
     .settings_table td,
-    .settings_table th{
-        overflow-wrap:break-word;
-        word-break:break-word;
+    .settings_table th {
+        overflow-wrap: break-word;
+        word-break: break-word;
     }
 
     .settings_table input,
     .settings_table select,
-    .settings_table .select2-container{
-        max-width:100% !important;
-        width:100% !important;
-        box-sizing:border-box;
+    .settings_table .select2-container {
+        max-width: 100% !important;
+        width: 100% !important;
+        box-sizing: border-box;
     }
 
-    .settings_table td[width]{
-        width:auto !important;
+    .settings_table td[width] {
+        width: auto !important;
     }
 
     .secondary_lang.ui-sortable-handle {
-    width: 50%;
-}
-
-
+        width: 50%;
+    }
 
     .form_table {
         display: block;
@@ -138,34 +142,7 @@
         max-width: 100%;
         -webkit-overflow-scrolling: touch;
     }
-/*
-     .form_table {
-        display: table !important;
-        width: 100% !important;
-    }
 
-    .form_table tbody {
-        display: table-row-group !important;
-    }
-
-    .form_table thead{
-        display: table-header-group !important;
-    }
-
-    .form_table tr {
-        display: table-row !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        border: none !important;
-    }
-
-    .form_table td,
-    .form_table th {
-        display: table-cell !important;
-        width: auto !important;
-        min-width: unset !important;
-    }
-*/
     button.translatable {
         padding: 0 5px;
         margin: 0 !important;
@@ -205,7 +182,6 @@
     .full-width {
         display: flex;
         flex-wrap: wrap;
-
     }
 
     a.green.button {
@@ -233,7 +209,7 @@
         height: fit-content;
     }
 
-    .action-button>span {
+    .action-button > span {
         display: flex;
         width: fit-content;
     }
@@ -253,7 +229,6 @@
     .has_bottom_border {
         min-height: fit-content;
     }
-
 
     li.primary-only {
         min-height: fit-content;
@@ -302,11 +277,11 @@
         flex-direction: row;
     }
 
-    form[action="logs.php"]>div {
+    form[action="logs.php"] > div {
         height: fit-content;
     }
 
-    form>a {
+    form > a {
         margin-top: 5px;
     }
 
@@ -344,7 +319,7 @@
         height: 40px;
     }
 
-    #customQ_nav>#sub_nav {
+    #customQ_nav > #sub_nav {
         min-height: fit-content;
         width: auto;
     }
@@ -363,14 +338,14 @@
         height: 40px;
     }
 
-    #sub_nav>li {
+    #sub_nav > li {
         display: flex !important;
         flex-shrink: 0;
         align-items: center;
         height: 100%;
     }
 
-    #sub_nav>li>a {
+    #sub_nav > li > a {
         display: flex !important;
         align-items: center;
         gap: 6px;
@@ -390,17 +365,12 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
-
-
-
-
 }
 
 /* <= 500px (phones) */
 @media (max-width: 500px) {
     .jb-overflow-menu-helper-position {
         height: 100%;
-
     }
 
     .pull-right {
@@ -410,10 +380,6 @@
         text-align: center;
         width: fit-content;
         font-size: 12px;
-        float: none !important;
-    }
-
-    .pull-right.flush-right p {
         float: none !important;
     }
 

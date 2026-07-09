@@ -1,109 +1,13 @@
-
 @media screen and (max-width: 768px) {
-    input,
-    select,
-    textarea{
-        box-sizing: border-box;
-        max-height: 32px;
-        max-width: 200px;
-        padding: 4px;
-        padding-right: 16px;
-        margin-bottom: 4px;
-        border-radius: 4px;}
-    button {
-        width: 80% !important;
-        box-sizing: border-box;
-        max-height: 32px;
-        width: fit-content;
-        padding: 10px;
-        margin-bottom: 4px;
-        border-radius: 4px;}
-    body {
-        overflow-x: hidden;
-        align-items: center;
-        justify-content: center;}
-    img {
-        max-width: 100%;
-        height: auto;}
-    table {
-        width: 100% !important;
-        padding: 0;
-        margin: 0;}
-
-    table tr td[width="50%"] {
-        width: 100% !important;
-        display: block !important;}
-
-    .main-content {
-        order: 1;
-        width: 100%;}
-    .sidebar.pull-right {
-        order: 2;
-        width: 100%;
-        margin-top: 15px;
-        float: none !important;}
-    .ui-datepicker-trigger {
-        align-self: start;
-        align-items: start;
-        max-width: 32px;
-        border: none;}
-    .redactor-box{
-        width: 100% !important;
-        margin: 0, 4px;
-        border: solid 2px #9b9b9b !important;}
-    .search.well {
-        margin: 10px;
-        margin-bottom: 16px;
-        height: fit-content !important;}
-    .flag{
-        margin: 4px !important;}
-    .pull-right{
-        margin-top: 15px;
-        float: none !important;}
-
-    #topic-id{
-        width: 80% !important;
-        max-width: fit-content;
-        margin-top: 10px;}
-    #help-topic-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;}
-    #help-topic-parent,
-    #help-topic-child {
-        width: 100% !important;}   
-    #landing_page {
-        display: flex;
-        flex-direction: column;}
-    #header{
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-        padding: 0;}
-    #header p{
-        display: flex;
-        align-items: center;
-        text-align: center;
-        margin: 0 10px;
-    }
-    #container {
-        width: 100% !important;
-        padding: 0;
-    }
     #content {
         width: 90% !important;
-        padding: 10px 10px;
-        margin: 10px 10px !important;
+        padding: 10px;
+        margin: 10px !important;
         align-items: center;
         justify-content: center;
         align-self: end;
+    }
 
-    }
-    #ticketForm {
-        width: 100% !important;
-        padding: 0;
-        margin: 0;
-    }
     #nav {
         display: flex !important;
         flex-wrap: wrap;
@@ -111,107 +15,40 @@
         gap: 5px;
         padding: 0;
         width: 100% !important;
-        padding: 0;
         margin: 0;
         margin-bottom: 10px;
-        height: fit-content !important; 
-        /* Modern syntax */
+        height: fit-content !important;
         background-image: linear-gradient(to bottom, #d4d4d4, #d4d4d4, #b4b4b4) !important;
     }
+
     #nav li {
         float: none !important;
         display: block;
     }
-    #msg_error {
-        height: fit-content !important;
-        margin-bottom: 10px;
-    }  
-    #ticketInfo {
-        width: 100% !important;
-    }  
-    #logo .valign-helper {
-        display: none;
-    }  
-    #ui-datepicker-div.ui-datepicker-multi {
-        width: 95vw !important;
-    }
-    #ui-datepicker-div .ui-datepicker-group {
-        float: none !important;
-        width: 100% !important;
-    }
-    .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current, 
-    .ui-datepicker .ui-datepicker-buttonpane button {
-        float:left !important;
-    }
-}
-@media (max-width: 500px) {    
 
+    .flag{
+        margin: 4px !important;}
+
+    #landing_page {
+        display: flex;
+        flex-direction: column;}
+}
+
+@media (max-width: 500px) {
     .pull-right.flush-right {
         display: flex !important;
-        flex-direction: column ;
-        align-items: center ;
-        justify-content: center ;
-        text-align: center ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         width: fit-content;
         margin: 0 10px 5px 0;
         padding: 10px;
         font-size: 12px;
         float: none !important;
     }
+
     .pull-right.flush-right p {
-        float: none !important; 
-    }  
-    #ticketInfo > tbody > tr:nth-child(2) {
-        display: block !important;
+        float: none !important;
     }
-    #ticketInfo > tbody > tr:nth-child(2) > td[width="50%"] {
-        display: block !important;
-        width: 100% !important;
-        box-sizing: border-box;
-    }   
-    #ticketTable {
-        display: block;
-        width: 100% !important;
-        white-space: nowrap;
-    }   
-    #content > table {
-        display: block;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-    }
-    #content > table::-webkit-scrollbar {
-        display: none;
-    }
-    #clientLogin input{
-        width: 100% !important;
-        max-width: 100%;
-    }
-    #clientLogin div{
-        width: 100% !important;
-        display: flex !important;
-        flex-direction: column;
-        align-items: center;
-    }
-    #ticketForm td{
-        width: 100% !important;
-    }
-
-}
-
-@media (max-width: 352px){
-
-    #ticketForm > table > tbody:first-child tr {
-        display: flex !important;
-        flex-direction: column;
-        width: 100% !important;
-    }
-
-    #ticketForm > table > tbody:first-child td {
-        width: 100% !important;
-        flex: 0 0 100%;
-        box-sizing: border-box;
-    }
-
 }

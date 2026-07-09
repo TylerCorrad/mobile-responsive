@@ -1,0 +1,260 @@
+/* Responsive styles — reorganized and optimized */
+
+/* <= 1024px */
+@media screen and (max-width: 1024px) {
+    #container,
+    #pjax-container {
+        box-sizing: border-box;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0;
+    }
+
+    table {
+        width: 100% !important;
+        margin-right: 20px !important;
+    }
+
+    ul {
+        min-height: fit-content;
+        visibility: visible;
+    }
+
+    svg,
+    form {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    #nav,
+    #overlay,
+    #basic_search {
+        overflow: hidden;
+        min-height: fit-content;
+    }
+
+    .dialog {
+        top: 0 !important;
+        left: 0 !important;
+        margin: 20px !important;
+        width: 90cqw;
+        height: 90cqh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        overflow-wrap: break-word;
+    }
+
+    #overlay {
+        margin: 0 !important;
+    }
+}
+
+/* <= 768px (tablet and small laptops) */
+@media screen and (max-width: 768px) {
+    .sticky.bar .pull-left,
+    .sticky.bar .pull-right {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .sticky.bar .pull-right {
+        margin-top: 10px;
+    }
+
+    .form_table tbody,
+    .form_table tr,
+    .form_table td,
+    .form_table th {
+        display: block !important;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .form_table tr {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+
+    .form_table td {
+        min-width: unset !important;
+    }
+
+    .form_table input,
+    .form_table select,
+    .form_table textarea {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .clean.tabs {
+        height: fit-content;
+    }
+
+    .attached.input {
+        display: flex;
+        align-content: baseline;
+        width: fit-content;
+    }
+
+    input.basic-search {
+        margin-bottom: 0;
+        height: 100cqh;
+    }
+
+    .attached.button {
+        width: min-content !important;
+        height: 100cqh;
+    }
+
+    .customQ-dropdown {
+        display: none !important;
+    }
+
+    span.action-button {
+        flex-direction: row-reverse;
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .action-button > span {
+        display: flex;
+        width: fit-content;
+    }
+
+    .icon-caret-down,
+    .icon-cog {
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .icon-sort-by-attributes-alt {
+        padding-top: 5px;
+    }
+
+    .has_bottom_border {
+        min-height: fit-content;
+    }
+
+    .jb-overflowmenu {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    table.queue.tickets {
+        width: 100% !important;
+        table-layout: auto !important;
+    }
+
+    table.queue.tickets th,
+    table.queue.tickets td {
+        width: auto !important;
+    }
+
+    table.list {
+        display: block !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        white-space: nowrap;
+        box-sizing: border-box;
+        max-width: fit-content;
+    }
+
+    table.list tbody,
+    table.list thead,
+    table.list tfoot {
+        width: 100%;
+    }
+
+    #nav {
+        display: block !important;
+        overflow-y: hidden;
+        height: fit-content;
+        border-top: 1px solid #aaa;
+        margin: 0 !important;
+        white-space: normal;
+    }
+
+    .dialog {
+        max-width: 90cqw;
+    }
+
+    .sticky.bar.opaque {
+        display: flex;
+        flex-direction: row;
+    }
+
+    form[action="logs.php"] > div {
+        height: fit-content;
+    }
+
+    .customQ-dropdown {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        left: 0;
+        right: 0;
+    }
+
+    .customQ-dropdown .scroll-height {
+        max-height: 300px;
+        overflow-y: auto;
+    }
+
+    .add-queue {
+        width: 100%;
+    }
+
+    .add-queue a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #customQ_nav {
+        display: flex !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+    }
+
+    #sub_nav,
+    nav {
+        width: 100%;
+        display: flex !important;
+        min-width: max-content !important;
+        overflow-x: scroll;
+    }
+}
+
+/* <= 500px (phones) */
+@media (max-width: 500px) {
+    .jb-overflow-menu-helper-position {
+        height: 100%;
+    }
+
+    .pull-right {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: fit-content;
+        font-size: 12px;
+        float: none !important;
+    }
+
+    .pull-right.flush-right p {
+        float: none !important;
+    }
+
+    .tab_content {
+        width: 100%;
+        padding: 0 10px;
+        overflow-x: auto;
+    }
+}

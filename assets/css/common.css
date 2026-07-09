@@ -8,7 +8,7 @@
         max-width: 200px;
         padding: 4px;
         padding-right: 16px;
-        margin-bottom: 4px;
+        margin: 4px 0 !important;
         border-radius: 4px;}
     button {
         width: 80% !important;
@@ -16,7 +16,7 @@
         max-height: 32px;
         width: fit-content;
         padding: 10px;
-        margin-bottom: 4px;
+        margin: 4px 0 !important;
         border-radius: 4px;}
     body {
         overflow-x: hidden;
@@ -33,6 +33,60 @@
     table tr td[width="50%"] {
         width: 100% !important;
         display: block !important;}
+
+    
+.dialog table,
+    .dialog tbody,
+    .dialog thead,
+    .dialog tfoot,
+    .dialog tr,
+    .dialog td,
+    .dialog th {
+        display: block;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .dialog tr {
+        margin-bottom: 12px;
+    }
+
+    .dialog td,
+    .dialog th {
+        min-width: 0 !important;
+    }
+
+    .dialog input,
+    .dialog textarea,
+    .dialog select {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    
+    .dialog p.full-width {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .dialog .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        width: 100%;
+    }
+
+    .dialog .buttons.pull-left,
+    .dialog .buttons.pull-right {
+        float: none !important;
+    }
+
+    .dialog .buttons input {
+        flex: 1;
+        min-width: 120px;
+    }
 
     .main-content {
         order: 1;
@@ -51,6 +105,7 @@
         width: 100% !important;
         margin: 0, 4px;
         border: solid 2px #9b9b9b !important;}
+
     .search.well {
         margin: 10px;
         margin-bottom: 16px;
@@ -74,19 +129,20 @@
         align-items: center;
         justify-content: center;
         margin: 0;
-        padding: 0;}
+        padding: 0;
+        height: fit-content !important;}
     #header p{
         display: flex;
         align-items: center;
         text-align: center;
-        margin: 0 10px;
+        margin: 0 10px !important;
     }
     #container {
         width: 100% !important;
         padding: 0;
     }
     #content {
-        width: 98% !important;
+        width: auto;
         padding: 10px 10px;
         margin-right: 5px;
         align-items: center;

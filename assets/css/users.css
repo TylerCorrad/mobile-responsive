@@ -1,6 +1,5 @@
 @media screen and (max-width: 768px) {
     #content {
-        width: 90% !important;
         padding: 10px;
         margin: 10px !important;
         align-items: center;
@@ -29,9 +28,24 @@
     .flag{
         margin: 4px !important;}
 
+    
+    .instructions{
+        width: auto;
+        padding: 0 !important;
+    }
+
     #landing_page {
         display: flex;
         flex-direction: column;}
+
+    form #client-login{
+        margin: 20px 40px 0; 
+        max-width: 100% ;
+    }
+
+    table.padded{
+        max-width: 100cqw !important;
+    }
 }
 
 @media (max-width: 500px) {

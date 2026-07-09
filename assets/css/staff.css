@@ -2,17 +2,27 @@
 
 /* <= 1024px */
 @media screen and (max-width: 1024px) {
+
     #container,
     #pjax-container {
         box-sizing: border-box;
-        width: 100% !important;
+        width: auto;
         max-width: 100% !important;
         padding: 0;
+    }
+
+    #container {
+        width: 100% !important;
     }
 
     table {
         width: 100% !important;
         margin-right: 20px !important;
+    }
+
+    caption {
+        width: max-content;
+        max-width: 80cqw;
     }
 
     ul {
@@ -26,11 +36,31 @@
         width: 100%;
     }
 
+    #pjax-container td{
+        max-width: max-content !important;
+    }
+
+        
+    .select2-container {
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+    .dialog input [type="submit"] {
+        margin-top: 20px;
+    }
+
+    .action-button {
+        padding-inline: 5px;
+        width: max-content;
+    }
+
     #nav,
     #overlay,
     #basic_search {
         overflow: hidden;
         min-height: fit-content;
+        width: auto;
     }
 
     .dialog {
@@ -47,10 +77,17 @@
     #overlay {
         margin: 0 !important;
     }
+
+    #sort-dropdown,
+    #category-dropdown {
+        left: 0 !important;
+        max-width: calc(100vw - 10px);
+    }
 }
 
 /* <= 768px (tablet and small laptops) */
 @media screen and (max-width: 768px) {
+
     .sticky.bar .pull-left,
     .sticky.bar .pull-right {
         float: none;
@@ -59,17 +96,81 @@
         text-align: left;
     }
 
-    .sticky.bar .pull-right {
-        margin-top: 10px;
+    .pull-right.flush-right {
+        margin: 0;
     }
 
-    .form_table tbody,
-    .form_table tr,
+    .settings_table{
+        width:100% !important;
+        max-width:100% !important;
+        table-layout:fixed;
+    }
+
+    .settings_table td,
+    .settings_table th{
+        overflow-wrap:break-word;
+        word-break:break-word;
+    }
+
+    .settings_table input,
+    .settings_table select,
+    .settings_table .select2-container{
+        max-width:100% !important;
+        width:100% !important;
+        box-sizing:border-box;
+    }
+
+    .settings_table td[width]{
+        width:auto !important;
+    }
+
+    .secondary_lang.ui-sortable-handle {
+    width: 50%;
+}
+
+
+
+    .form_table {
+        display: block;
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100% !important;
+        max-width: 100%;
+        -webkit-overflow-scrolling: touch;
+    }
+/*
+     .form_table {
+        display: table !important;
+        width: 100% !important;
+    }
+
+    .form_table tbody {
+        display: table-row-group !important;
+    }
+
+    .form_table thead{
+        display: table-header-group !important;
+    }
+
+    .form_table tr {
+        display: table-row !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+    }
+
     .form_table td,
     .form_table th {
-        display: block !important;
-        width: 100% !important;
-        box-sizing: border-box;
+        display: table-cell !important;
+        width: auto !important;
+        min-width: unset !important;
+    }
+*/
+    button.translatable {
+        padding: 0 5px;
+        margin: 0 !important;
+        min-height: 19px;
+        max-width: fit-content;
     }
 
     .form_table tr {
@@ -80,6 +181,7 @@
 
     .form_table td {
         min-width: unset !important;
+        min-height: max-content !important;
     }
 
     .form_table input,
@@ -98,6 +200,16 @@
         display: flex;
         align-content: baseline;
         width: fit-content;
+    }
+
+    .full-width {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    a.green.button {
+        min-width: fit-content;
     }
 
     input.basic-search {
@@ -121,7 +233,7 @@
         height: fit-content;
     }
 
-    .action-button > span {
+    .action-button>span {
         display: flex;
         width: fit-content;
     }
@@ -142,9 +254,9 @@
         min-height: fit-content;
     }
 
-    .jb-overflowmenu {
-        width: 100%;
-        overflow-x: scroll;
+
+    li.primary-only {
+        min-height: fit-content;
     }
 
     table.queue.tickets {
@@ -190,8 +302,12 @@
         flex-direction: row;
     }
 
-    form[action="logs.php"] > div {
+    form[action="logs.php"]>div {
         height: fit-content;
+    }
+
+    form>a {
+        margin-top: 5px;
     }
 
     .customQ-dropdown {
@@ -207,6 +323,10 @@
         overflow-y: auto;
     }
 
+    .jb-overflowmenu {
+        overflow: visible;
+    }
+
     .add-queue {
         width: 100%;
     }
@@ -218,24 +338,69 @@
     }
 
     #customQ_nav {
-        display: flex !important;
-        overflow-x: auto !important;
-        overflow-y: hidden !important;
+        overflow: visible;
+        min-height: fit-content;
+        width: auto;
+        height: 40px;
+    }
+
+    #customQ_nav>#sub_nav {
+        min-height: fit-content;
+        width: auto;
     }
 
     #sub_nav,
     nav {
         width: 100%;
         display: flex !important;
-        min-width: max-content !important;
         overflow-x: scroll;
+        overflow: visible;
     }
+
+    #sub_nav {
+        align-items: stretch;
+        overflow-x: auto;
+        height: 40px;
+    }
+
+    #sub_nav>li {
+        display: flex !important;
+        flex-shrink: 0;
+        align-items: center;
+        height: 100%;
+    }
+
+    #sub_nav>li>a {
+        display: flex !important;
+        align-items: center;
+        gap: 6px;
+        white-space: nowrap;
+        height: 100%;
+    }
+
+    .scroll-height li {
+        display: flex;
+        align-items: center;
+        height: 32px;
+        overflow: hidden;
+    }
+
+    .scroll-height li a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+
+
+
 }
 
 /* <= 500px (phones) */
 @media (max-width: 500px) {
     .jb-overflow-menu-helper-position {
         height: 100%;
+
     }
 
     .pull-right {
